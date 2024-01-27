@@ -1,0 +1,13 @@
+﻿.theme_page_sidebar_and_theme_text_container
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+h3
+{
+    text-align:center;
+    padding: 3%;
+    padding-top:0;
+}

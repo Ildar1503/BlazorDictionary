@@ -1,0 +1,17 @@
+﻿.wrapper{
+    display:flex;
+    flex-direction:column;
+    padding: 3%;
+}
+p word_without_translate {
+    position: relative;
+}
+
+.toolTip {
+    position: absolute;
+    border: 1px dashed #b3c9ce;
+    border-radius: 4px;
+    text-align: center;
+    color: black;
+    background: #fff;
+}

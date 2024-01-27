@@ -1,0 +1,15 @@
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\BlazorWebLanguageLearn.DAL.csproj.AssemblyReference.cache
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\BlazorWebLanguageLearn.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\BlazorWebLanguageLearn.DAL.AssemblyInfoInputs.cache
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\BlazorWebLanguageLearn.DAL.AssemblyInfo.cs
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\BlazorWebLanguageLearn.DAL.csproj.CoreCompileInputs.cache
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\bin\Debug\net7.0\BlazorWebLanguageLearn.DAL.deps.json
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\bin\Debug\net7.0\BlazorWebLanguageLearn.DAL.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\bin\Debug\net7.0\BlazorWebLanguageLearn.DAL.pdb
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\bin\Debug\net7.0\BlazorWebLanguageLearn.Domain.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\bin\Debug\net7.0\BlazorWebLanguageLearn.Domain.pdb
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\BlazorWebLanguageLearn.DAL.csproj.CopyComplete
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\BlazorWebLanguageLearn.DAL.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\refint\BlazorWebLanguageLearn.DAL.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\BlazorWebLanguageLearn.DAL.pdb
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.DAL\obj\Debug\net7.0\ref\BlazorWebLanguageLearn.DAL.dll

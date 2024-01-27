@@ -1,0 +1,12 @@
+﻿@using BlazorWebLanguageLearn.Shared;
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+    </Found>
+    <NotFound>
+        <PageTitle>Not found</PageTitle>
+        <LayoutView Layout="@typeof(MainLayout)">
+             <p>Извините, такого адреса не существует.</p>
+        </LayoutView>
+    </NotFound>
+</Router>

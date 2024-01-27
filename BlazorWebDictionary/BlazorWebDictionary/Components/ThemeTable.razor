@@ -1,0 +1,86 @@
+﻿@using BlazorWebLanguageLearn.Services.Interfaces.DbInterfaces;
+@using BlazorWebLanguageLearn.Services.Interfaces.DictionaryInterfaces;
+@inject IWorkWithDictionary _workWithDictionary;
+<div class="table_and_button_block">
+    <table class="table">
+        <tr>
+            <th>Урок: </th>
+            <th>Тема: </th>
+        </tr>
+        @foreach (var dictionariItem in numberPageNumberThemeAndThemeDictionary)
+        {
+            for (int item = 0; item < dictionariItem.Value.Item1.Count; item++)
+            {
+                <tr>
+                    <td>@dictionariItem.Value.Item1[item]</td>
+                    <!--Передача id и названия темы-->
+                    @if (numberIdDictionary.ContainsKey(dictionariItem.Value.Item2[item]))
+                    {
+                        string labelName = dictionariItem.Value.Item2[item];
+                        <td><a href="/table-theme/@Language/@numberIdDictionary[dictionariItem.Value.Item2[item]]/@dictionariItem.Value.Item2[item]">@CorrectLabel(labelName)</a></td>
+                    }
+                </tr>
+            }
+        }
+    </table>
+    <div class="button_block">
+        @if (pageNumber > 1)
+        {
+            <button @onclick="DecrementPage" class="theme_table_button">Назад</button>
+        }
+        @if (pageNumber < pageCount)
+        {
+            <button @onclick="IncrementPage" class="theme_table_button">Вперед</button>
+        }
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public string Language { get; set; } = default!;
+    //Номер страницы.
+    int pageNumber = 1;
+    //Подсчет количества страниц, для получения списков таблиц.
+    int pageCount = 0;
+
+    //Словарь для записи номера страницы, номеров и тем на данной странице.
+    Dictionary<int, (List<int>, List<string>)> numberPageNumberThemeAndThemeDictionary = new Dictionary<int, (List<int>, List<string>)>();
+    //Словарь для записи номера темы и ее названия.
+    Dictionary<int, string> numberThemeDictionary = new Dictionary<int, string>();
+    //Словарь для записи id к темам.
+    Dictionary<string, string> numberIdDictionary = new Dictionary<string, string>();
+
+    protected async override Task OnInitializedAsync()
+    {
+        Task tasks = Task.Factory.StartNew(() =>
+        {
+            //Получение номера и темы страницы.
+            numberThemeDictionary = _workWithDictionary.GetThemesDictionary(Language);
+        }, TaskCreationOptions.RunContinuationsAsynchronously);
+        await tasks.WaitAsync(CancellationToken.None);
+
+        //Добавление id к страницам.
+        numberIdDictionary = await _workWithDictionary.AddDictionaryItemsDbId(numberThemeDictionary);
+        pageCount = numberIdDictionary.Count / 7;
+        //Запись номера страницы, номеров и тем на данной странице.
+        numberPageNumberThemeAndThemeDictionary = _workWithDictionary.GetThemesForPage(numberThemeDictionary, pageNumber);
+    }
+
+    private void IncrementPage()
+    {
+        pageNumber += 1;
+        numberPageNumberThemeAndThemeDictionary = _workWithDictionary.GetThemesForPage(numberThemeDictionary, pageNumber);
+    }
+
+    private void DecrementPage()
+    {
+        pageNumber -= 1;
+        numberPageNumberThemeAndThemeDictionary = _workWithDictionary.GetThemesForPage(numberThemeDictionary, pageNumber);
+    }
+
+    private string CorrectLabel(string text)
+    {
+        return text.Replace('_', '.');
+    }
+}
+

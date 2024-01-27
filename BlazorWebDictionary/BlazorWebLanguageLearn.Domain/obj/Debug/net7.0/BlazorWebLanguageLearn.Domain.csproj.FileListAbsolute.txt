@@ -1,0 +1,12 @@
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\bin\Debug\net7.0\BlazorWebLanguageLearn.Domain.deps.json
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\bin\Debug\net7.0\BlazorWebLanguageLearn.Domain.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\bin\Debug\net7.0\BlazorWebLanguageLearn.Domain.pdb
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\obj\Debug\net7.0\BlazorWebLanguageLearn.Domain.csproj.AssemblyReference.cache
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\obj\Debug\net7.0\BlazorWebLanguageLearn.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\obj\Debug\net7.0\BlazorWebLanguageLearn.Domain.AssemblyInfoInputs.cache
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\obj\Debug\net7.0\BlazorWebLanguageLearn.Domain.AssemblyInfo.cs
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\obj\Debug\net7.0\BlazorWebLanguageLearn.Domain.csproj.CoreCompileInputs.cache
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\obj\Debug\net7.0\BlazorWebLanguageLearn.Domain.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\obj\Debug\net7.0\refint\BlazorWebLanguageLearn.Domain.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\obj\Debug\net7.0\BlazorWebLanguageLearn.Domain.pdb
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Domain\obj\Debug\net7.0\ref\BlazorWebLanguageLearn.Domain.dll

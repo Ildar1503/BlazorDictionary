@@ -1,0 +1,17 @@
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\bin\Debug\net7.0\BlazorWebLanguageLearn.Services.deps.json
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\bin\Debug\net7.0\BlazorWebLanguageLearn.Services.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\bin\Debug\net7.0\BlazorWebLanguageLearn.Services.pdb
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\BlazorWebLanguageLearn.Services.csproj.AssemblyReference.cache
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\BlazorWebLanguageLearn.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\BlazorWebLanguageLearn.Services.AssemblyInfoInputs.cache
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\BlazorWebLanguageLearn.Services.AssemblyInfo.cs
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\BlazorWebLanguageLearn.Services.csproj.CoreCompileInputs.cache
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\BlazorWebLanguageLearn.Services.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\refint\BlazorWebLanguageLearn.Services.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\BlazorWebLanguageLearn.Services.pdb
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\ref\BlazorWebLanguageLearn.Services.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\bin\Debug\net7.0\BlazorWebLanguageLearn.DAL.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\bin\Debug\net7.0\BlazorWebLanguageLearn.Domain.dll
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\bin\Debug\net7.0\BlazorWebLanguageLearn.DAL.pdb
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\bin\Debug\net7.0\BlazorWebLanguageLearn.Domain.pdb
+C:\Users\79603\OneDrive\Рабочий стол\Обучение Blazor\BlazorWebDictionary\BlazorWebLanguageLearn.Services\obj\Debug\net7.0\BlazorWebLanguageLearn.Services.csproj.CopyComplete

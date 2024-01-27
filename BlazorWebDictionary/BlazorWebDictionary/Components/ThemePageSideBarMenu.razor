@@ -1,0 +1,70 @@
+﻿@using BlazorWebLanguageLearn.Services.Interfaces.DictionaryInterfaces;
+@inject IWorkWithDictionary _workWithDictionary;
+<div class="theme_page_side_bar_menu_container">
+    <h2>Темы: @SideBarTitle</h2>
+    <table>
+        @foreach(var item in pageIdsAndThemesSideBarMenuDictionary)
+        {
+            string labelName = item.Key;
+            <tr>
+                <td>@IdToNumberConverter(item.Value)</td>
+                <td>
+                    @*Выделение выбранной темы*@
+                    @if(CorrectLabel(labelName) == ThemeName)
+                    {
+                        <a href="/table-theme/@Language/@item.Value/@item.Key" style="color:red">@CorrectLabel(labelName)</a>
+                    }
+                    else
+                    {
+
+                        <a href="/table-theme/@Language/@item.Value/@item.Key">@CorrectLabel(labelName)</a>
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+@code
+{
+    [Parameter]
+    public string SideBarTitle { get; set; } = default!;
+    [Parameter]
+    public string ThemeName { get; set; } = default!;
+    [Parameter]
+    public string Language { get; set; } = default!;
+
+    //Словарь для записи id к теме
+    Dictionary<string, string> pageIdsAndThemesSideBarMenuDictionary { get; set; } = new();
+    //Словарь для записи номера и названия темы.
+    Dictionary<int, string> themeNameAndNumberDictionary = new();
+
+    protected async override Task OnInitializedAsync()
+    {
+        //Заполнение словаря для мен
+        if(pageIdsAndThemesSideBarMenuDictionary.Count == 0)
+        {
+            Task tasks = Task.Factory.StartNew(() =>
+            {
+                //Получение словаря с темами.
+                themeNameAndNumberDictionary = _workWithDictionary.GetThemesDictionary(Language);
+            }, TaskCreationOptions.RunContinuationsAsynchronously);
+
+            await tasks.WaitAsync(CancellationToken.None);
+
+            //Получение id тем.
+            pageIdsAndThemesSideBarMenuDictionary = await _workWithDictionary.AddDictionaryItemsDbId(themeNameAndNumberDictionary);
+        }
+    }
+
+    //Конвертер для получения номера id из строки.
+    private int IdToNumberConverter(string id)
+    {
+        return Convert.ToInt32(id.Remove(0, Language.Length + 1));
+    }
+
+    private string CorrectLabel(string text)
+    {
+        return text.Replace('_', '.');
+    }
+}

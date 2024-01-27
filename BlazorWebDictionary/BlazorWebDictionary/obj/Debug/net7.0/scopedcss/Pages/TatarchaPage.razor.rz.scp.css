@@ -1,0 +1,14 @@
+h3[b-y7onj4404h], р4[b-y7onj4404h]{
+    text-align:center;
+}
+.main_content[b-y7onj4404h]{
+    margin-top: 2%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    flex: 1 1 0px;
+    gap:1%;
+}
+.about_page_text[b-y7onj4404h]{
+    width:100%;
+}

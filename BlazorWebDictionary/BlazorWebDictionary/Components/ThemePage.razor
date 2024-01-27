@@ -1,0 +1,31 @@
+﻿@page "/table-theme/{language}/{themeId}/{themeName}"
+<PageTitle>Тема @correctLabel</PageTitle>
+<h3>Тема: @correctLabel</h3>
+<div class="theme_page_sidebar_and_theme_text_container">
+    @if(this.Language == "tatarcha")
+    {
+        <ThemePageSideBarMenu Language="@this.Language" ThemeName="@correctLabel" SideBarTitle="татарского языка:"></ThemePageSideBarMenu>
+    }
+    <ThemeText ThemeId="@this.ThemeId" Language="@this.Language"></ThemeText>
+</div>
+
+@code{
+    [Parameter]
+    public string ThemeName { get; set; } = default!;
+    [Parameter]
+    public string ThemeId { get; set; } = default!;
+    [Parameter]
+    public string Language { get; set; } = default!;
+    //Корректное название.
+    public string correctLabel = "";
+
+    protected override void OnParametersSet()
+    {
+        correctLabel = CorrectLabel(ThemeName);
+    }
+
+    private string CorrectLabel(string text)
+    {
+        return text.Replace('_', '.');
+    }
+}

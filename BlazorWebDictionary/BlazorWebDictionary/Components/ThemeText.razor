@@ -1,0 +1,64 @@
+﻿@using BlazorWebLanguageLearn.Domain;
+@using BlazorWebLanguageLearn.Services.Interfaces.AddMarkupStringInterfaces;
+@using BlazorWebLanguageLearn.Services.Interfaces.DbInterfaces;
+@inject IAddMarkupString _markupString;
+@inject IGetTranslateService<FromTatarchaTranslate> _getTranslateTatarcha;
+@inject IJSRuntime _js;
+@markupString
+@code{
+    [Parameter]
+    public string Language { get; set; } = default!;
+    [Parameter]
+    public string ThemeId { get; set; } = default!;
+    //Текст страницы.
+    MarkupString markupString;
+    //Данные о странице.
+    string resultText = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(Language == "tatarcha")
+        {
+            var resultText = await _markupString.GetMarkupStringTatarcha(ThemeId);
+            markupString = (MarkupString)resultText;
+        }
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if(Language == "tatarcha")
+        {
+            resultText = await _markupString.GetMarkupStringTatarcha(ThemeId);
+            markupString = (MarkupString)resultText;
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (Language == "tatarcha")
+            {
+                markupString = (MarkupString)resultText;
+                var transleteResponce = await _getTranslateTatarcha.GetTranslateById("translate_from_" + ThemeId);
+
+                if (transleteResponce.Data != null)
+                {
+                    var wordsTranslate = transleteResponce.Data.PageTranslate;
+                    await CheckUrl($"table-theme/{Language}/{ThemeId}");
+                    await SetAttributes(wordsTranslate);
+                }
+            }
+        }
+    }
+
+    private async Task SetAttributes(string text)
+    {
+        await _js.InvokeVoidAsync("SetAttributes", text);
+    }
+
+    private async Task CheckUrl(string url)
+    {
+        await _js.InvokeVoidAsync("CheckUrl", url);
+    }
+}
